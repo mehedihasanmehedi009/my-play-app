@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1200000,
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "price": 1500000,
+    "rating": 5.0,
+    "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Litton Das",
+    "country": "Bangladesh",
+    "role": "Wicket-keeper Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "price": 1150000,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": 1100000,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1530048699158-720a31162b90?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 1800000,
+    "rating": 5.0,
+    "image": "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 1700000,
+    "rating": 5.0,
+    "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Legbreak googly",
+    "price": 1450000,
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1350000,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Jos Buttler",
+    "country": "England",
+    "role": "Wicket-keeper Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "price": 1550000,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1600000,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 1300000,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80"
+  }
+]

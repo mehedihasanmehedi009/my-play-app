@@ -1,5 +1,7 @@
-export const Card = ({CADR}) => {
-    const {
+import React from 'react';
+
+const Availaableplayer = ({CADR}) => {
+     const {
     name,
     country,
     role,
@@ -66,4 +68,6 @@ export const Card = ({CADR}) => {
     </div>
     </div>
   )
-}
+};
+
+export default Availaableplayer;

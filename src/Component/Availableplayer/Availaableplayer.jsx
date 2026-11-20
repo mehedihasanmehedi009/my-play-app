@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const Availaableplayer = ({CADR , setCoin,coin}) => {
+const 
+Availaableplayer = ({CADR , setCoin,coin,selectedPlayer ,setSelectedPlayer}) => {
     const [players, setPlayers] =useState(false)   
   const {
       name,
@@ -29,6 +30,7 @@ const Availaableplayer = ({CADR , setCoin,coin}) => {
      return
   }
   setPlayers(true)
+  setSelectedPlayer([...selectedPlayer,CADR])
   }
 
   return (

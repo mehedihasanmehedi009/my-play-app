@@ -1,8 +1,10 @@
-import React from 'react';
+import { useState } from "react";
+import { toast } from "react-toastify";
 
-const Availaableplayer = ({CADR}) => {
-     const {
-    name,
+const Availaableplayer = ({CADR , setCoin,coin}) => {
+    const [players, setPlayers] =useState(false)   
+  const {
+      name,
     country,
     role,
     rating,
@@ -11,6 +13,24 @@ const Availaableplayer = ({CADR}) => {
     price,
     image,
   } = CADR;
+  const choosePlayer = ()=>{
+    let newCoin = coin - price
+  if (newCoin >= 0) {
+    setCoin(coin - price);
+    toast.success(`${name} added to your squad!`, {
+      position: "top-right",
+      autoClose: 2000,
+    });
+  } else {
+    toast.error("Not enough coin! Claim more credit to buy this player.", {
+      position: "top-right",
+      autoClose: 2500,
+    });
+     return
+  }
+  setPlayers(true)
+  }
+
   return (
     <div>
 <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
@@ -55,14 +75,14 @@ const Availaableplayer = ({CADR}) => {
 
       <div className="flex items-center justify-between mt-4 pt-1">
         <p className="text-sm font-bold text-gray-900">
-          Price: {price?.toLocaleString()} Coin
+          Price: {price} Coin
         </p>
 
         <button
-          onClick={() => handleChoosePlayer && handleChoosePlayer(CADR)}
-          className="px-3.5 py-2 rounded-lg border border-gray-300 hover:bg-[#E7FE29] hover:border-[#E7FE29] text-sm font-semibold text-gray-800 hover:text-black transition-colors cursor-pointer"
+          onClick={choosePlayer} disabled ={players ? true: false}
+          className="px-3.5 py-2 rounded-lg border disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-200 border-gray-300 hover:bg-[#E7FE29] hover:border-[#E7FE29] text-sm font-semibold text-gray-800 hover:text-black transition-colors cursor-pointer"
         >
-          Choose Player
+          {players === true ? "Selected" :" Choose Player"}
         </button>
       </div>
     </div>

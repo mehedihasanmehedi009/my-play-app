@@ -1,4 +1,4 @@
- export const Header = ({ coin = 0 }) => {
+ export const Header = ({ coin  }) => {
   return (
     <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] border-b border-white/10 shadow-lg backdrop-blur-md">
       <div className="max-w-[1120px] mx-auto w-full px-4 py-2.5 flex items-center justify-between">

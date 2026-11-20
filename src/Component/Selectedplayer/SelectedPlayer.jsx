@@ -1,5 +1,12 @@
- export const SelectedPlayer = ({ selectedPlayer, handleRemovePlayer }) => {
-  
+ export const SelectedPlayer = ({ selectedPlayer ,setSelectedPlayer ,setCoin ,coin }) => {
+
+
+const handleRemovePlayer = (players) =>{
+console.log(selectedPlayer,"player")
+const filterplayer = selectedPlayer.filter( d => d.name !== players.name)
+setSelectedPlayer(filterplayer)
+setCoin(coin + players.price)
+  }
 
   return (
   <>
@@ -32,7 +39,7 @@
 
       {/* Right: Delete Button */}
       <button
-        onClick={() => handleRemovePlayer && handleRemovePlayer(players.id)}
+        onClick={() => handleRemovePlayer (players)}
         title="Remove Player"
         className="p-3 rounded-xl bg-red-50 hover:bg-red-100 text-red-500 hover:text-red-600 transition-colors cursor-pointer"
       >

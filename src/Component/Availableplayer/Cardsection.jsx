@@ -34,7 +34,7 @@ export const Cardsection = ({ cadrdata ,setCoin ,coin }) => {
                         ))}
                     </div>
                 ) : (
-                    <SelectedPlayer  selectedPlayer={selectedPlayer} />
+                    <SelectedPlayer  selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer} setCoin={setCoin} coin={coin} />
                 )}
 
             </div>

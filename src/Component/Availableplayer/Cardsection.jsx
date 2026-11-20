@@ -8,7 +8,7 @@ export const Cardsection = ({ cadrdata ,setCoin ,coin }) => {
 
     const [selectedType, setSelectedType] = useState("Available")
     const [selectedPlayer, setSelectedPlayer] = useState([])
-
+    
 
     return (
         <>

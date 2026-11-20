@@ -11,7 +11,34 @@ setCoin(coin + players.price)
   return (
   <>
   {
-    selectedPlayer.map((players, index) =>   <div key={index} className="flex items-center p-2 justify-between bg-white border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+    selectedPlayer.length === 0 ? 
+    <div className="bg-white border border-dashed border-gray-300 rounded-2xl p-10 sm:p-14 text-center shadow-sm">
+    {/* Icon Badge */}
+    <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-[#131313] text-[#E7FE29] flex items-center justify-center text-2xl font-bold shadow-sm">
+      🏏
+    </div>
+
+    {/* Title & Subtitle */}
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
+      No Players Selected Yet!
+    </h2>
+    <p className="text-sm sm:text-base text-gray-500 max-w-md mx-auto mt-2">
+      Your squad currently has 0 out of 11 players. Head over to Available players and build your dream XI.
+    </p>
+
+    {/* Neon Accent Action Button */}
+    <div className="mt-6 inline-block p-1 rounded-2xl border border-gray-300">
+      <button
+         
+        className="px-6 py-3 rounded-xl bg-[#E7FE29] hover:brightness-95 text-black font-bold text-sm transition-all cursor-pointer"
+      >
+        Add More Player
+      </button>
+    </div>
+  </div>
+    : <div className="space-y-5">
+    {
+       selectedPlayer.map((players, index) =>   <div key={index} className="flex items-center p-2 justify-between bg-white border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
       {/* Left: Image + Player Info */}
       <div className="flex items-center gap-4">
      <img
@@ -59,6 +86,8 @@ setCoin(coin + players.price)
         </svg>
       </button>
     </div>)
+    }
+  </div>
   }
   </>
   );
